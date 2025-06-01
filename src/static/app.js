@@ -88,6 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
             messageDiv.textContent = "Failed to remove participant. Please try again.";
             messageDiv.className = "error";
             messageDiv.classList.remove("hidden");
+            setTimeout(() => messageDiv.classList.add("hidden"), 5000);
           }
         });
       });
